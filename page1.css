@@ -1,0 +1,26 @@
+th,
+td {
+  border: 1px solid;
+
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+table {
+  border: 1px solid;
+
+  margin: 0 auto;
+}
+
+.kaydet {
+  position: absolute;
+  top: 11px;
+  right: 100px;
+}
+.bitir {
+  position: absolute;
+  top: 59px;
+  right: 120px;
+}
