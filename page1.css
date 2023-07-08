@@ -1,11 +1,9 @@
 th,
 td {
   border: 1px solid;
-
   max-width: 100px;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
 }
 
 table {
@@ -23,4 +21,24 @@ table {
   position: absolute;
   top: 59px;
   right: 120px;
+}
+@media (max-width: 30em) {
+  table {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  th,
+  td {
+    white-space: normal;
+    max-width: none;
+  }
+
+  .kaydet,
+  .bitir {
+    position: static;
+    margin-top: 0.625em;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
