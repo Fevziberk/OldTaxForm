@@ -22,7 +22,7 @@ row = [
     var toplamBelgeAdet = 0,
       toplamBelgeTutar = 0;
   
-    for (var i = 1; i <= 99; i++) {
+    for (var i = 1; i <= 19; i++) {
       var TarihValue = document.getElementsByName("TARIH" + i)[0].value;
       var NosuValue = document.getElementsByName("NO" + i)[0].value;
       var KimdenAldValue = document.getElementsByName("KIMDEN" + i)[0].value;
@@ -86,10 +86,10 @@ row = [
       toplamBelgeAdet = egitimAdet + saglikAdet + gidaAdet + giyimAdet + kiraAdet;
       toplamBelgeTutar =
         egitimTutar + saglikTutar + gidaTutar + giyimTutar + kiraTutar;
-      if (i == 50) {
+      if (i == 10) {
         document.getElementById("TOPLAM1").innerHTML = toplamBelgeTutar;
         document.getElementById("nakledilen").innerHTML = toplamBelgeTutar;
-      } else if ((i > 50) & (i < 100)) {
+      } else if ((i > 10) & (i < 20)) {
         document.getElementById("TOPLAM2").innerHTML = toplamBelgeTutar;
       }
     }
