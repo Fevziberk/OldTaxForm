@@ -185,7 +185,7 @@
 .finalPriceText {
   border: 1px solid black;
   text-align: end;
-  
+  padding-right: 5px;
 }
 .finalPrice {
   border: 1px solid black;
