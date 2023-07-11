@@ -22,14 +22,16 @@ row = [
     var toplamBelgeAdet = 0,
       toplamBelgeTutar = 0;
   
-    for (var i = 1; i <= 19; i++) {
-      var TarihValue = document.getElementsByName("TARIH" + i)[0].value;
-      var NosuValue = document.getElementsByName("NO" + i)[0].value;
-      var KimdenAldValue = document.getElementsByName("KIMDEN" + i)[0].value;
-      var CinsValue = document.getElementsByName("Combo" + i)[0].options[
-        document.getElementsByName("Combo" + i)[0].selectedIndex
+    for (var i = 1; i <= 11; i++) {
+
+      
+      var TarihValue = document.getElementsByName("date" + i)[0].value;
+      var NosuValue = document.getElementsByName("no" + i)[0].value;
+      var KimdenAldValue = document.getElementsByName("whoFrom" + i)[0].value;
+      var CinsValue = document.getElementsByName("type" + i)[0].options[
+        document.getElementsByName("type" + i)[0].selectedIndex
       ].value;
-      var TutarYTLValue = document.getElementsByName("TUTAR" + i)[0].value;
+      var TutarYTLValue = document.getElementsByName("price" + i)[0].value;
       if (isNaN(TutarYTLValue)) {
         alert(
           "Lütfen " +
@@ -86,11 +88,11 @@ row = [
       toplamBelgeAdet = egitimAdet + saglikAdet + gidaAdet + giyimAdet + kiraAdet;
       toplamBelgeTutar =
         egitimTutar + saglikTutar + gidaTutar + giyimTutar + kiraTutar;
-      if (i == 10) {
-        document.getElementById("TOPLAM1").innerHTML = toplamBelgeTutar;
-        document.getElementById("nakledilen").innerHTML = toplamBelgeTutar;
-      } else if ((i > 10) & (i < 20)) {
-        document.getElementById("TOPLAM2").innerHTML = toplamBelgeTutar;
+      if (i == 6) {
+        document.getElementById("finalPriceLeft").innerHTML = toplamBelgeTutar;
+        document.getElementById("transferredPriceRight").innerHTML = toplamBelgeTutar;
+      } else if ((i > 6) & (i <= 11)) {
+        document.getElementById("finalPriceRight").innerHTML = toplamBelgeTutar;
       }
     }
   

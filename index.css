@@ -1,13 +1,12 @@
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30vh;
+  margin: auto;
+  width: 70%;
+  padding: 30px;
 }
 .taxTable {
   display: grid;
   border: 1px solid black;
-  max-width: 960px;
+  max-width: 970px;
 }
 
 .TableHead {
@@ -19,7 +18,7 @@
   grid-column-gap: 1px;
   grid-row-gap: 1px;
   border-bottom: none;
-  max-width: 960px;
+
   margin-top: 1px;
   margin-left: 1px;
   margin-right: 1px;
@@ -55,6 +54,7 @@
   grid-area: 2 / 3 / 3 / 4;
   border: 1px solid black;
 }
+
 .whoFromHead {
   grid-area: 2 / 4 / 3 / 5;
   border: 1px solid black;
@@ -146,7 +146,6 @@
   grid-row-gap: 1px;
   border-top: none;
   border-bottom: none;
-  max-width: 960px;
 }
 .rowNum {
   border: 1px solid black;
@@ -178,8 +177,6 @@
   grid-column-gap: 1px;
 
   border-top: none;
-
-  max-width: 960px;
 }
 
 .finalPriceText {
@@ -209,4 +206,37 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.dateInputField {
+  width: 100%;
+  box-sizing: border-box;
+}
+.noInputField {
+  width: 100%;
+  box-sizing: border-box;
+}
+.whoFromInputField {
+  width: 100%;
+  box-sizing: border-box;
+}
+.typeInputField {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.priceInputField {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kaydet {
+  position: absolute;
+  top: 11px;
+  right: 102px;
+}
+.bitir {
+  position: absolute;
+  top: 59px;
+  right: 120px;
 }
