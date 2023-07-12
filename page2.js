@@ -12,17 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var toplamBelgeAdet = localStorage.getItem("toplamBelgeAdetTransfer");
     var toplamBelgeTutar = localStorage.getItem("toplamBelgeTutarTransfer");
   
-    document.getElementById("egitimAdet").innerHTML = egitimAdet.toString();
-    document.getElementById("egitimTutar").innerHTML = egitimTutar.toString();
-    document.getElementById("saglikAdet").innerHTML = saglikAdet.toString();
-    document.getElementById("saglikTutar").innerHTML = saglikTutar.toString();
-    document.getElementById("gidaAdet").innerHTML = gidaAdet.toString();
-    document.getElementById("gidaTutar").innerHTML = gidaTutar.toString();
-    document.getElementById("giyimAdet").innerHTML = giyimAdet.toString();
-    document.getElementById("giyimTutar").innerHTML = giyimTutar.toString();
-    document.getElementById("kiraAdet").innerHTML = kiraAdet.toString();
-    document.getElementById("kiraTutar").innerHTML = kiraTutar.toString();
-    document.getElementById("toplamBelgeAdet").innerHTML = toplamBelgeAdet.toString();
-    document.getElementById("toplamBelgeTutar").innerHTML = toplamBelgeTutar.toString();  
+    document.getElementById("typeEduFileCell").innerHTML = egitimAdet.toString();
+    document.getElementById("typeEduPriceCell").innerHTML = egitimTutar.toString();
+    document.getElementById("typeMedFileCell").innerHTML = saglikAdet.toString();
+    document.getElementById("typeMedPriceCell").innerHTML = saglikTutar.toString();
+    document.getElementById("typeNutrFileCell").innerHTML = gidaAdet.toString();
+    document.getElementById("typeNutrPriceCell").innerHTML = gidaTutar.toString();
+    document.getElementById("typeClothing").innerHTML = giyimAdet.toString();
+    document.getElementById("typeClothingPriceCell").innerHTML = giyimTutar.toString();
+    document.getElementById("typeRentFileCell").innerHTML = kiraAdet.toString();
+    document.getElementById("typeRentPriceCell").innerHTML = kiraTutar.toString();
+    document.getElementById("totalFile").innerHTML = toplamBelgeAdet.toString();
+    document.getElementById("totalPrice").innerHTML = toplamBelgeTutar.toString();  
   });
   

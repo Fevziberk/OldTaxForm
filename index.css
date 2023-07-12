@@ -215,6 +215,7 @@
 .noInputField {
   width: 100%;
   box-sizing: border-box;
+  
 }
 .whoFromInputField {
   width: 100%;
@@ -223,6 +224,7 @@
 .typeInputField {
   width: 100%;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .priceInputField {

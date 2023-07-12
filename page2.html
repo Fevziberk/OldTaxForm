@@ -2,167 +2,118 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="page2.css" />
     <title>Page 2</title>
+    <link rel="stylesheet" href="page2.css" />
     <script src="page2.js"></script>
   </head>
-  <body> 
-    <table>
-      <tr>
-        <th colspan="3">ÖZEL GİDER İNDİRİMİNE AİT BİLDİRİM</th>
-      </tr>
-      <tr>
-        <th colspan="3">
-          (Ücretleri Gerçek Usülde Tespit edilen ve Vergisi Tevkif Yolu ile
+  <body>
+    <div class="container">
+      <div class="tableHead">
+        <div class="tableTitle">ÖZEL GİDER İNDİRİMİNE AİT BİLDİRİM</div>
+        <div class="textUnderTitle">
+          (Ücretleri Gerçek Usülde Tespit Edilen ve Vergisi Tevkif Yolu İle
           Kesilen Ücretlilere Ait)
-        </th>
-      </tr>
-      <tr>
-        <th rowspan="3" width="30%">
-          Ait olduğu Dönem <br />
-          ..../..../20....&nbsp&nbsp&nbsp&nbsp&nbsp..../..../20....
-        </th>
-        <th colspan="2">İşverenin</th>
-      </tr>
-      <tr>
-        <th width="20%">Adı Soyadı <br />Veya Ünvanı</th>
-        <th></th>
-      </tr>
-      <tr>
-        <th>Adresi</th>
-        <th></th>
-      </tr>
-    </table>
-    
-    <table>
-      <tr>
-        <th colspan="4">ÖZEL GİDER İNDİRİMİNDEN FAYDALANIN</th>
-      </tr>
-      <tr>
-        <th width="30%">Soyadı</th>
-        <th width="30%"></th>
-        <th width="20%">Kurum Sicil No</th>
-        <th width="20%"></th>
-      </tr>
-      <tr>
-        <th>Adı</th>
-        <th></th>
-        <th></th>
-        <th>&nbsp</th>
-      </tr>
-      <tr>
-        <th>
+        </div>
+        <div class="headDate">
+          Ait Olduğu Dönem <br />
+          ..../..../20.. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp ..../..../20...
+        </div>
+        <div class="titleEmployer">İŞVERENİN</div>
+        <div class="employerInfo">
+          Adı, Soyadı <br />
+          Veya Ünvanı
+        </div>
+        <div class="employerAdress">Adresi</div>
+        <div class="employerInfoCell">&nbsp</div>
+        <div class="employerAdressCell">&nbsp</div>
+      </div>
+      <div class="tableBody">
+        <div class="tableBodyTitle">ÖZEL GİDER İNDİRİMİNDEN FAYDALANANIN</div>
+        <div class="surname">Soyadı</div>
+        <div class="surnameCell">&nbsp</div>
+        <div class="regNum">Kurum Sicil No</div>
+        <div class="regNumCell">&nbsp</div>
+        <div class="name">Adı</div>
+        <div class="nameCell1">&nbsp</div>
+        <div class="nameCell2">&nbsp</div>
+        <div class="nameCell3">&nbsp</div>
+        <div class="adressInfo">
           İkametgah Adresi <br />
           ve Telefon No.
-        </th>
-        <th colspan="3"></th>
-      </tr>
-      <tr>
-        <th colspan="4">
+        </div>
+        <div class="adressInfoCell">&nbsp</div>
+        <div class="secondTitle">
           ADINA BELGE ALINMIŞ İSE <br />
           Özel gider indiriminden faydalanan eşi ve 18 yaşını aşmamış
           çocukları(*)
-        </th>
-      </tr>
-      <tr>
-        <th width="33.3%">Adı ve Soyadı</th>
-        <th width="33.3%">Doğum Tarihi</th>
-        <th width="33.3%" colspan="2">Yakınlık Derecesi</th>
-      </tr>
-      <tr>
-        <th>&nbsp</th>
-        <th></th>
-        <th colspan="2"></th>
-      </tr>
-      <tr>
-        <th>&nbsp</th>
-        <th></th>
-        <th colspan="2"></th>
-      </tr>
-      <tr>
-        <th>&nbsp</th>
-        <th></th>
-        <th colspan="2"></th>
-      </tr>
-      <tr>
-        <th>&nbsp</th>
-        <th></th>
-        <th colspan="2"></th>
-      </tr>
-      <tr>
-        <th>&nbsp</th>
-        <th></th>
-        <th colspan="2"></th>
-      </tr>
-    </table>
-    
-    <table>
-      <tr>
-        <th colspan="5">ÖZEL GİDER İNDİRİMİ HESAPLAMA TABLOSU</th>
-      </tr>
-      <tr>
-        <th>Harcamaların Cinsi</th>
-        <th width = "15%">Belge Adedi</th>
-        <th width = "15%">Tutarı</th>
-        <th rowspan="2">
-          Toplam Harcamalara Özel <br />
-          Gider İstisnalarına Esas <br />
-          Olacak Tutarı (%10)
-        </th>
-        <th width="15%" rowspan="2">&nbsp</th>
-      </tr>
-      <tr>
-        <th>1 Eğitim</th>
-        <th id ="egitimAdet"></th>
-        <th id ="egitimTutar"></th>
-        
-      </tr>
-      <tr>
-        <th>2 Sağlık</th>
-        <th id ="saglikAdet"></th>
-        <th id ="saglikTutar"></th>
-        <th colspan="2" rowspan="5">...../...../20.. <br>
-        Özel Gider İndiriminden <br>
-        Faydalananın İmzası
-        </th>
-      </tr>
-      <tr>
-        <th>3 Gıda</th>
-        <th id ="gidaAdet"></th>
-        <th id ="gidaTutar"></th>
-        
-      </tr>
-      <tr>
-        <th>4 Giyim</th>
-        <th id ="giyimAdet"></th>
-        <th id ="giyimTutar"></th>
-        
-      </tr>
-      <tr>
-        <th>5 Kira</th>
-        <th id ="kiraAdet"></th>
-        <th id ="kiraTutar"></th>
-        
-      </tr>
-      <tr>
-        <th>6 Toplam</th>
-        <th id = "toplamBelgeAdet"></th>
-        <th id = "toplamBelgeTutar"></th>
-        
-      </tr>
-    </table>
-    <br>
-
-    <p class = "text">İş bu bildirim ile beyan ettiğim eğitim, sağlık, gıda, giyim için ekli .......... adet belge karşılığı yapmış <br>
-    olduğum harcama ..................... TL ................... KR'dır.(**) Bu belgelerin ve belgelerde yer <br>
-    alan harcamaların doğruluğunu beyan ile belgeler ve harcamaların gerçeği yansıtmaması nedeniyle doğacak vergi <br>
-    ve cezalardan sorumlu olduğumu taahhüt ve kabul ederim.
-    <br>
-    <br>
-    NOT:(**) Bu boşluklar yazı ile doldurulacaktır.
-    </p>
-    
+        </div>
+        <div class="nameSurname">Adı ve Soyadı</div>
+        <div class="birthDate">Doğum Tarihi</div>
+        <div class="relativeDegree">Yakınlık Derecesi</div>
+        <div class="nameSurnameCell1">&nbsp</div>
+        <div class="birthDateCell1">&nbsp</div>
+        <div class="relativeDegreeCell1">&nbsp</div>
+        <div class="nameSurnameCell2">&nbsp</div>
+        <div class="birthDateCell2">&nbsp</div>
+        <div class="relativeDegreeCell2">&nbsp</div>
+        <div class="nameSurnameCell3">&nbsp</div>
+        <div class="birthDateCell3">&nbsp</div>
+        <div class="relativeDegreeCell3">&nbsp</div>
+        <div class="nameSurnameCell4">&nbsp</div>
+        <div class="birthDateCell4">&nbsp</div>
+        <div class="relativeDegreeCell4">&nbsp</div>
+        <div class="nameSurnameCell5">&nbsp</div>
+        <div class="birthDateCell5">&nbsp</div>
+        <div class="relativeDegreeCell5">&nbsp</div>
+      </div>
+      <div class="tableFoot">
+        <div class="tableFootTitle">ÖZEL GİDER İNDİRİMİ HESAPLAMA TABLOSU</div>
+        <div class="expenseType">Harcamaların Cinsi</div>
+        <div class="fileAmount">Belge Adedi</div>
+        <div class="price">Tutarı</div>
+        <div class="percentage">
+          Toplam Harcamalara Özel Gider <br />
+          İstisnalarına Esas Olacak Tutarı (%10)
+        </div>
+        <div class="percentageCell">&nbsp</div>
+        <div class="typeEducation">1 &nbsp&nbsp Eğitim</div>
+        <div class="typeEduFileCell" id="typeEduFileCell">0</div>
+        <div class="typeEduPriceCell" id="typeEduPriceCell">0</div>
+        <div class="typeMed">2 &nbsp&nbsp Sağlık</div>
+        <div class="typeMedFileCell" id="typeMedFileCell">0</div>
+        <div class="typeMedPriceCell" id="typeMedPriceCell">0</div>
+        <div class="typeNutr">3 &nbsp&nbsp Gıda</div>
+        <div class="typeNutrFileCell" id="typeNutrFileCell" >0</div>
+        <div class="typeNutrPriceCell" id="typeNutrPriceCell">0</div>
+        <div class="typeClothing">4 &nbsp&nbsp Giyim</div>
+        <div class="typeClothingFileCell" id="typeClothingFileCell">0</div>
+        <div class="typeClothingPriceCell" id="typeClothingPriceCell">0</div>
+        <div class="typeRent">5 &nbsp&nbsp Kira</div>
+        <div class="typeRentFileCell" id="typeRentFileCell">0</div>
+        <div class="typeRentPriceCell" id="typeRentPriceCell">0</div>
+        <div class="total">6 &nbsp&nbsp TOPLAM</div>
+        <div class="totalFile" id="totalFile">0</div>
+        <div class="totalPrice" id="totalPrice">0</div>
+        <div class="signature">
+          ..../..../20.... <br />
+          Özel Gider İndiriminden <br />Faydalanan İmzası
+        </div>
+      </div>
+      <br>
+      <p>
+        İş bu bildirim ile beyan ettiğim eğitim, sağlık, gıda, giyim için ekli
+        ....................................... adet belge karşılığı yapmış 
+        olduğum harcama ....................................... TL ....................................... KR'dır.(**)
+        Bu belgelerin ve belgelerde yer
+        alan harcamaların doğruluğunu beyan ile belgeler ve harcamaların gerçeği
+        yansıtmaması nedeniyle doğacak vergi 
+        ve cezalardan sorumlu olduğumu taahhüt ve kabul ederim.
+        <br />
+        <br />
+        NOT:(**) Bu boşluklar yazı ile doldurulacaktır.
+      </p>
+    </div>
+   
   </body>
 </html>
