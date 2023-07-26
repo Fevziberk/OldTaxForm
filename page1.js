@@ -120,5 +120,5 @@ function storeInput() {
 }
 
 function openNewPage() {
-  window.open("./page2.html", "_blank");
+  window.open("./page2.php", "_blank");
 }

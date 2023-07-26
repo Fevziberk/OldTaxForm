@@ -1,17 +1,31 @@
+<?php
+include("database.php");
+
+
+session_start();
+
+if (isset($_SESSION['username'])) {
+  $username = $_SESSION['username'];
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 1</title>
 
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page 1</title>
 
-    
-    </style>
-  </head>
-  <body>
+  <link rel="stylesheet" href="page1.css" />
+  <script src="page1.js"></script>
+
+
+  </style>
+</head>
+
+<body>
+  <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
     <div class="container">
       <div class="taxTable">
         <div class="TableHead">
@@ -21,7 +35,7 @@
           </div>
           <div class="headTextFirst">VERGİ İNDİRİMİNE ESAS BELGENİN</div>
           <div class="queueNoSecond">
-            Sıra <br/>
+            Sıra <br />
             No
           </div>
           <div class="headTextSecond">VERGİ İNDİRİMİNE ESAS BELGENİN</div>
@@ -305,7 +319,22 @@
     </div>
     <button onclick="storeInput()" class="kaydet">Kaydet</button>
     <button onclick="openNewPage()" class="bitir">Bitir</button>
-  </body>
+  </form>
+</body>
+
 </html>
 
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+  $sql_check = "SELECT * FROM userinfo WHERE username = '$username'";
+  $result_check = mysqli_query($conn, $sql_check);
+  if (mysqli_num_rows($result_check) > 0) {
+      
+   
 
+    
+  } 
+}
+mysqli_close($conn);
+
+?>
